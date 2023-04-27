@@ -1,0 +1,94 @@
+@import "normalize.css";
+@import "variables.css";
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.menu {
+  width: 230px;
+  font-family: Verdana;
+  background-color: var(--dark-grey);
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  padding-bottom: 10px;
+}
+
+.menu-nav {
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+.menu-nav__item {
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-link {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-self: center;
+}
+
+.menu-user {
+  margin-top: auto;
+}
+
+.user-settings {
+  background-color: var(--white);
+  color: var(--dark-grey);
+  margin-left: 14px;
+  margin-right: 14px;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.user-settings__item {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.user-settings__item:last-child {
+  margin-bottom: 0;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-top: 4px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.user-info::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 1px;
+  background: var(--dark-grey-blue);
+}
+
+.user-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--white-two);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-grey);
+  margin-right: 6px;
+}
